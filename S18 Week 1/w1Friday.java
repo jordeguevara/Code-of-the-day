@@ -52,5 +52,17 @@ public class w1Friday{
 		}
 		return newer;
 	}
+	
+public static String regExpMethod(String str){ // Jorde's Method
+    String[] words = str.split(" ");
+    String temp="";
+    
+    for(int i =0; i < words.length;i++) { 
+        int n = words[i].length();
+       temp += (words[i].length() >3) ? (words[i].substring(0, 1) + (n-2) + words[i].charAt(n-1) + " ")
+                : words[i]+" ";
+    }
+    return temp;
+  }
 
 }
