@@ -108,3 +108,21 @@ else if((num /3))&&((num /4){
 	}
 }
 	}
+		    
+  public static String caffeineBuzz(int num) { //Jorde's Method
+      String temp="";
+     if(num >=0){ 
+      if(num%3 ==0)
+          temp+= "java";
+          if(num%4==0)
+              temp = "coffee";
+              if(num%2==0)
+                  temp+="script";
+      else
+          temp =  "mocha_missing!";
+     }
+     else {
+         temp = "NonZero/NonNumber: Try again";
+     }
+      return temp;
+  }
